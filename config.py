@@ -16,5 +16,4 @@ CLAUDE_MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 1024
 HISTORY_LIMIT = 10          # last N messages kept per section
 INACTIVE_DAYS = 7           # days before sending "miss you" message
-CHUNK_SIZE = 900            # characters per knowledge-base chunk
-CHUNK_OVERLAP = 100
+CHUNK_SIZE = 900 
