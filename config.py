@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN: str = os.getenv("BOT_TOKEN", "")
-CLAUDE_API_KEY: str = os.getenv("CLAUDE_API_KEY", "")
+BOT_TOKEN: str = os.getenv("BOT_TOKEN") or os.getenv("TELEGRAM_BOT_TOKEN", "")
+CLAUDE_API_KEY: str = os.getenv("CLAUDE_API_KEY") or os.getenv("ANTHROPIC_API_KEY", "")
 DATABASE_URL: str = os.getenv("DATABASE_URL", "")
 ADMIN_TELEGRAM_ID: int = int(os.getenv("ADMIN_TELEGRAM_ID", "0"))
 
